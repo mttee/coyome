@@ -1,0 +1,9 @@
+D:\My Project\coyome\backend\Coyome.Data\bin\Debug\netcoreapp3.1\Coyome.Data.deps.json
+D:\My Project\coyome\backend\Coyome.Data\bin\Debug\netcoreapp3.1\Coyome.Data.dll
+D:\My Project\coyome\backend\Coyome.Data\bin\Debug\netcoreapp3.1\Coyome.Data.pdb
+D:\My Project\coyome\backend\Coyome.Data\obj\Debug\netcoreapp3.1\Coyome.Data.csprojAssemblyReference.cache
+D:\My Project\coyome\backend\Coyome.Data\obj\Debug\netcoreapp3.1\Coyome.Data.csproj.CoreCompileInputs.cache
+D:\My Project\coyome\backend\Coyome.Data\obj\Debug\netcoreapp3.1\Coyome.Data.AssemblyInfoInputs.cache
+D:\My Project\coyome\backend\Coyome.Data\obj\Debug\netcoreapp3.1\Coyome.Data.AssemblyInfo.cs
+D:\My Project\coyome\backend\Coyome.Data\obj\Debug\netcoreapp3.1\Coyome.Data.dll
+D:\My Project\coyome\backend\Coyome.Data\obj\Debug\netcoreapp3.1\Coyome.Data.pdb
