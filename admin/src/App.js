@@ -1,7 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.scss';
-import Topbar from './components/layouts/Topbar'
+import Layout from './components/layouts/'
+
+import Login from './containers/Auth/Login'
 
 
 
@@ -23,7 +25,9 @@ function App() {
         </a>
       </header> */}
 
-      <Topbar></Topbar>
+      {/* <Layout/> */}
+
+      <Login/>
 
     </div>
   );
