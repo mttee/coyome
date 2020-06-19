@@ -6,6 +6,9 @@
     height: 100%;
     background-color: #36394c !important;
     flex-wrap: unset;
+    .topbar-menu{
+      width: 240px;
+    }
     .navbar-collapse {
       height: 100%;
     }
@@ -18,6 +21,7 @@
       color: white;
       font-size: 20px;
       margin-right: 8%;
+      cursor: pointer;
     }
     //nav left search
     .nav-search {

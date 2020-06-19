@@ -6,7 +6,8 @@ TABLES OF CSS
 2. general
 3. bootstrap-custom
 4. topbar
-
+5. sidebar
+6. auth
 */
 
 
@@ -21,3 +22,9 @@ TABLES OF CSS
 
 /*4.topbar*/
 @import "topbar";
+
+/*5.sidebar*/
+@import "sidebar";
+
+/*6.auth*/
+@import "auth";

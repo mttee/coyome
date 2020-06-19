@@ -9,3 +9,13 @@ body {
     // color: $body-color;
     font-size: $base-font-size;
   }
+
+  .col{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content-col-left{
+    max-width: max-content;
+    position: fixed;
+  }
