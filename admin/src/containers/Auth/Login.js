@@ -89,7 +89,7 @@ function ScrollableTabsButtonForce() {
           />
         </Tabs>
       </AppBar>
-      <TabPanel value={value} index={0}>
+      <TabPanel value={value} index={0} className="tabpanel">
         <form className="form-login" noValidate autoComplete="off" alignItems="center">
           <TextField
             className="text-field"
@@ -137,7 +137,7 @@ function ScrollableTabsButtonForce() {
           </div>
         </form>
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel value={value} index={1} className="tabpanel">
         <form className="form-register" noValidate autoComplete="off">
           <TextField
             className="text-field"
@@ -168,7 +168,7 @@ function ScrollableTabsButtonForce() {
           </Button>
         </form>
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel value={value} index={2} className="tabpanel">
         <form className="form-forgotPassword" noValidate autoComplete="off">
           <TextField
             className="text-field"
@@ -191,7 +191,9 @@ export default class Login extends Component {
       <div className="Auth">
         <div className="login-card">
           <div className="card-left">
-            <img src="img/login-image.jpg" class="img-fluid logo" alt="" />
+            <div class="logo">
+              <img src="/img/logo/logo-demo.png" alt="logo"/>
+            </div>
           </div>
           <div className="card-right">
             <ScrollableTabsButtonForce />

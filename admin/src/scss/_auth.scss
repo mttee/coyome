@@ -1,87 +1,155 @@
 /* Login page */
-.Auth{
-    background-color: #36394c;
-    width: 100%;
-    height: 100vh;
+.Auth {
+  background-color: #36394c;
+  width: 100%;
+  height: 100vh;
 
-    .login-card{
-        width: 700px;
-        height: 400px;
-        background-color: white;
+  .login-card {
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .card-left {
+      position: relative;
+      max-width: 40%;
+      min-width: 40%;
+      height: 100%;
+      border-top-left-radius: 9px;
+      border-bottom-left-radius: 9px;
+      background: url("/img/login-image.jpg") center no-repeat;
+      background-size: cover;
+
+      .logo {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
-        border-radius: 12px;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 100%;
+        max-width: 120px;
+        max-height: 120px;
+        min-width: 120px;
+        min-height: 120px;
+        filter: none;
+        -webkit-filter: blur(none);
         display: flex;
-        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(5px);
 
-        .card-left{
-            max-width: 40%;
-            min-width: 40%;
-            height: 100%;
-            border-top-left-radius: 12px;
-            border-bottom-left-radius: 12px;
-
-            img{
-                height: 100%;
-                object-fit: cover;
-                object-position: center;
-                border-top-left-radius: 10px;
-                border-bottom-left-radius: 10px;
-            }
+        img {
+          max-width: 80px;
+          max-height: 80px;
         }
-
-        .card-right{
-            max-width: 60%;
-            min-width: 60%;
-
-            .auth-tabs{
-                min-height: 100%;
-                header{
-                    border-top-right-radius: 10px;
-                }
-                .auth-tab{
-                    min-height: 50px;
-                    min-width: 33.33%;
-                    text-transform: unset;
-                    font-size: 12px;
-                    font-family: $font-rubik;
-                }
-
-                .form-login, .form-register, .form-forgotPassword{
-                    .text-field{
-                        width: 100%;
-                        margin: 2% 0;
-                        font-size: 12px;
-                        
-                        label{
-                            font-size: 14px;
-                        }                      
-                    }
-                    button{
-                        margin: 2% 0;
-                    }
-
-                    .social-login{
-                        .title{
-                            font-size: 12px;
-                            font-weight: bold;
-                        }
-                        .button-facebook{
-                            background-color: #3b5998;
-                            color:  white;
-                            text-transform: unset;
-                        }
-
-                        .button-twitter{
-                            background-color: #1da1f2;
-                            color:  white;
-                            text-transform: unset;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+
+    .card-right {
+      max-width: 60%;
+      min-width: 60%;
+
+      .auth-tabs {
+        min-height: 100%;
+        height: 100%;
+        max-height: 100%;
+
+        header {
+          border-top-right-radius: 10px;
+        }
+
+        .tabpanel {
+          height: calc(100% - 54px);
+          display: flex;
+          align-items: center;
+        }
+
+        .auth-tab {
+          min-height: 50px;
+          min-width: 33.33%;
+          text-transform: unset;
+          font-size: 12px;
+          font-family: $font-rubik;
+          outline: none;
+        }
+
+        .form-login,
+        .form-register,
+        .form-forgotPassword {
+          .text-field {
+            width: 100%;
+            margin: 2% 0;
+            font-size: 12px;
+
+            label {
+              font-size: 14px;
+            }
+          }
+          button {
+            margin: 2% 0;
+          }
+
+          .social-login {
+            padding-top: 5%;
+
+            .title {
+              font-size: 12px;
+              font-weight: bold;
+            }
+            .button-facebook {
+              background-color: #3b5998;
+              color: white;
+              text-transform: unset;
+            }
+
+            .button-twitter {
+              background-color: #1da1f2;
+              color: white;
+              text-transform: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Auth {
+    height: auto;
+    .login-card {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+      .card-left {
+        min-width: 100%;
+        max-width: 100%;
+        height: 50%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      .card-right {
+        height: 50%;
+        max-width: 100%;
+        min-width: 100%;
+
+        .auth-tabs {
+          height: auto;
+
+          .tabpanel {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }
