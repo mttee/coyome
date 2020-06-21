@@ -7995,11 +7995,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My Project\\coyome\\backend\\Coyome.API\\Coyome.API.csproj",
+      "projectUniqueName": "D:\\My Project\\coyome\\backend-sql\\Coyome.API\\Coyome.API.csproj",
       "projectName": "Coyome.API",
-      "projectPath": "D:\\My Project\\coyome\\backend\\Coyome.API\\Coyome.API.csproj",
+      "projectPath": "D:\\My Project\\coyome\\backend-sql\\Coyome.API\\Coyome.API.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\My Project\\coyome\\backend\\Coyome.API\\obj\\",
+      "outputPath": "D:\\My Project\\coyome\\backend-sql\\Coyome.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8018,11 +8018,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\My Project\\coyome\\backend\\Coyome.Core\\Coyome.Core.csproj": {
-              "projectPath": "D:\\My Project\\coyome\\backend\\Coyome.Core\\Coyome.Core.csproj"
+            "D:\\My Project\\coyome\\backend-sql\\Coyome.Core\\Coyome.Core.csproj": {
+              "projectPath": "D:\\My Project\\coyome\\backend-sql\\Coyome.Core\\Coyome.Core.csproj"
             },
-            "D:\\My Project\\coyome\\backend\\Coyome.Data\\Coyome.Data.csproj": {
-              "projectPath": "D:\\My Project\\coyome\\backend\\Coyome.Data\\Coyome.Data.csproj"
+            "D:\\My Project\\coyome\\backend-sql\\Coyome.Data\\Coyome.Data.csproj": {
+              "projectPath": "D:\\My Project\\coyome\\backend-sql\\Coyome.Data\\Coyome.Data.csproj"
             }
           }
         }
@@ -8071,7 +8071,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

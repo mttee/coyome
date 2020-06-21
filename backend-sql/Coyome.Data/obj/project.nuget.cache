@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HRxG2XOowBY/MPClqeWd05EQfn6gBSqh4H9hcIRwrq59MlxW9PhB5j6Uc97ovzRRU1foLlOEueNr5llMLYX67g==",
+  "dgSpecHash": "5U0ITVogBQxxGIm6eTng9xgswyf8bgNE0+2yVyRael2srs84EQxM4GSc3VQcrP/y9tHgMduOVzEOTs/+QJJjZQ==",
   "success": true,
-  "projectFilePath": "D:\\My Project\\coyome\\backend\\Coyome.Data\\Coyome.Data.csproj",
+  "projectFilePath": "D:\\My Project\\coyome\\backend-sql\\Coyome.Data\\Coyome.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\dnsclient\\1.3.1\\dnsclient.1.3.1.nupkg.sha512",

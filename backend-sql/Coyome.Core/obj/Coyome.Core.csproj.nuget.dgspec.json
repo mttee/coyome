@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\My Project\\coyome\\backend\\Coyome.Core\\Coyome.Core.csproj": {}
+    "D:\\My Project\\coyome\\backend-sql\\Coyome.Core\\Coyome.Core.csproj": {}
   },
   "projects": {
-    "D:\\My Project\\coyome\\backend\\Coyome.Core\\Coyome.Core.csproj": {
+    "D:\\My Project\\coyome\\backend-sql\\Coyome.Core\\Coyome.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Project\\coyome\\backend\\Coyome.Core\\Coyome.Core.csproj",
+        "projectUniqueName": "D:\\My Project\\coyome\\backend-sql\\Coyome.Core\\Coyome.Core.csproj",
         "projectName": "Coyome.Core",
-        "projectPath": "D:\\My Project\\coyome\\backend\\Coyome.Core\\Coyome.Core.csproj",
+        "projectPath": "D:\\My Project\\coyome\\backend-sql\\Coyome.Core\\Coyome.Core.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\My Project\\coyome\\backend\\Coyome.Core\\obj\\",
+        "outputPath": "D:\\My Project\\coyome\\backend-sql\\Coyome.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
