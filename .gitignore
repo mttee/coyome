@@ -1,0 +1,4 @@
+
+*.suo
+/backend-sql/Coyome.API/obj
+/backend-sql/Coyome.Data/obj
