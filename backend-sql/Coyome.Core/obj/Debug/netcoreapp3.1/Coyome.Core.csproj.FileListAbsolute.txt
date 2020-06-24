@@ -7,3 +7,12 @@ D:\My Project\coyome\backend\Coyome.Core\obj\Debug\netcoreapp3.1\Coyome.Core.Ass
 D:\My Project\coyome\backend\Coyome.Core\obj\Debug\netcoreapp3.1\Coyome.Core.AssemblyInfo.cs
 D:\My Project\coyome\backend\Coyome.Core\obj\Debug\netcoreapp3.1\Coyome.Core.dll
 D:\My Project\coyome\backend\Coyome.Core\obj\Debug\netcoreapp3.1\Coyome.Core.pdb
+D:\My Project\coyome\backend-sql\Coyome.Core\bin\Debug\netcoreapp3.1\Coyome.Core.deps.json
+D:\My Project\coyome\backend-sql\Coyome.Core\bin\Debug\netcoreapp3.1\Coyome.Core.dll
+D:\My Project\coyome\backend-sql\Coyome.Core\bin\Debug\netcoreapp3.1\Coyome.Core.pdb
+D:\My Project\coyome\backend-sql\Coyome.Core\obj\Debug\netcoreapp3.1\Coyome.Core.AssemblyInfoInputs.cache
+D:\My Project\coyome\backend-sql\Coyome.Core\obj\Debug\netcoreapp3.1\Coyome.Core.AssemblyInfo.cs
+D:\My Project\coyome\backend-sql\Coyome.Core\obj\Debug\netcoreapp3.1\Coyome.Core.csproj.CoreCompileInputs.cache
+D:\My Project\coyome\backend-sql\Coyome.Core\obj\Debug\netcoreapp3.1\Coyome.Core.dll
+D:\My Project\coyome\backend-sql\Coyome.Core\obj\Debug\netcoreapp3.1\Coyome.Core.pdb
+D:\My Project\coyome\backend-sql\Coyome.Core\obj\Debug\netcoreapp3.1\Coyome.Core.csprojAssemblyReference.cache
