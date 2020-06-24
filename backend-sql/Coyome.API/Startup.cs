@@ -4,8 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Coyome.API.Middlewares;
-using Coyome.Data.Models;
-using Coyome.Data.Services;
+using Coyome.Data.Models.ConfigSettingModel;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -14,7 +13,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
-using MongoDB.Driver;
 
 namespace Coyome.API
 {
@@ -31,16 +29,10 @@ namespace Coyome.API
         public void ConfigureServices(IServiceCollection services)
         {
             //Test Demo
-            services.Configure<DatabaseSettings>(
-                Configuration.GetSection(nameof(DatabaseSettings)));
-
-            services.AddSingleton<IDatabaseSettings>(sp =>
-                sp.GetRequiredService<IOptions<DatabaseSettings>>().Value);
-
-            services.AddScoped<ISanphamService, SanphamService>();
             services.AddAutoMapper(typeof(Startup));
 
             services.AddControllersWithViews();
+            services.Configure<AppSettingModel>(Configuration.GetSection("ConnectionStrings"));
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
