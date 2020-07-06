@@ -3,7 +3,7 @@ import React from 'react';
 import './App.scss';
 import Layout from './components/layouts/'
 
-import Login from './containers/Auth/Login'
+import Auth from './containers/Auth/index'
 
 
 
@@ -27,7 +27,7 @@ function App() {
 
       <Layout/>
 
-      {/* <Login/> */}
+      {/* <Auth/> */}
 
     </div>
   );
