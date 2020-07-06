@@ -8,6 +8,7 @@ TABLES OF CSS
 4. topbar
 5. sidebar
 6. auth
+7. profile
 */
 
 
@@ -28,3 +29,6 @@ TABLES OF CSS
 
 /*6.auth*/
 @import "auth";
+
+/*6.auth*/
+@import "profile";
