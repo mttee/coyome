@@ -3,6 +3,8 @@ import { Container, Row, Col } from "react-bootstrap/";
 import Topbar from "./Topbar";
 import Sidebar from "./Sidebar";
 
+import Profile from "../../containers/UserManager/Profile"
+
 export default class index extends Component {
   render() {
     return (
@@ -17,7 +19,9 @@ export default class index extends Component {
             <Col className="content-col-left">
               <Sidebar />
             </Col>
-            <Col></Col>
+            <Col>
+              <Profile/>
+            </Col>
           </Row>
         </Container>
       </React.Fragment>
