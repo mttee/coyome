@@ -25,9 +25,9 @@ function App() {
         </a>
       </header> */}
 
-      {/* <Layout/> */}
+      <Layout/>
 
-      <Login/>
+      {/* <Login/> */}
 
     </div>
   );
