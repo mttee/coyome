@@ -6,7 +6,7 @@ export default class ForgotPassword extends Component {
     render() {
         return (
             <form className="form-forgotPassword" noValidate autoComplete="off">
-                <TextField className="text-field" label="Email" variant="filled" size="small"/>
+                <TextField className="text-field" label="Email" variant="outlined" size="small"/>
                 <Button variant="contained" color="primary" fullWidth={true}>
                     Forgot Password
                 </Button>

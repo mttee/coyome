@@ -4,6 +4,13 @@ import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox, { CheckboxProps } from '@material-ui/core/Checkbox';
+import FormControl from '@material-ui/core/FormControl';
+import InputLabel from '@material-ui/core/InputLabel';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import Visibility from '@material-ui/icons/Visibility';
+import VisibilityOff from '@material-ui/icons/VisibilityOff';
+import IconButton from '@material-ui/core/IconButton';
+import OutlinedInput from '@material-ui/core/OutlinedInput';
 import {Facebook, Twitter} from '@material-ui/icons';
 import {method, LocalStorageKeys} from "../../constants/index"
 import apiCall from "../../utils/util"
@@ -13,14 +20,15 @@ export default class Login extends Component {
   constructor(props){
     super(props);
     this.state={
-      rememberMe: true
+      rememberMe: true,
+      showPassword: false
     }
   }
 
   handleChange(e){
     const name = e.target.name;
     const value = e.target.value;
-    if(e.target.name == "rememberMe"){
+    if(e.target.name === "rememberMe"){
       this.setState({
         [name]: e.target.checked,
       })
@@ -40,13 +48,39 @@ export default class Login extends Component {
     console.log(this.state)
   };
 
+  handleClickShowPassword = () =>{
+    this.setState({
+      showPassword: !this.state.showPassword
+    })
+  }
+
 
   render() {
     console.log(this.state)
     return (
       <form className="form-login" noValidate autoComplete="off" alignitems="center" method="post" onSubmit={this.Login}>
-        <TextField className="text-field" label="Username" variant="filled" size="small" name="username" onChange={(e) => this.handleChange(e)}/>
-        <TextField className="text-field" label="Password" variant="filled" size="small" name="password" onChange={(e) => this.handleChange(e)}/>
+        <TextField className="text-field" label="Username" variant="outlined" size="small" name="username" onChange={(e) => this.handleChange(e)}/>
+        <FormControl className="text-field" variant="outlined" size="small">
+          <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
+          <OutlinedInput
+            className="input-password"
+            type={this.state.showPassword ? 'text' : 'password'}
+            value={this.state.password}
+            onChange={(e) => this.handleChange(e)}
+            endAdornment={
+              <InputAdornment position="end">
+                <IconButton
+                  aria-label="toggle password visibility"
+                  onClick={this.handleClickShowPassword}
+                  edge="end"
+                >
+                  {this.state.showPassword ? <Visibility /> : <VisibilityOff />}
+                </IconButton>
+              </InputAdornment>
+            }
+            labelWidth={70}
+          />
+        </FormControl>
         <FormControlLabel
           control={
             <Checkbox checked={this.state.rememberMe} onChange={(e) => this.handleChange(e)} name="rememberMe" color="primary"/>
