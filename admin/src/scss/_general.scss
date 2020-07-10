@@ -10,12 +10,16 @@ body {
     font-size: $base-font-size;
   }
 
+  .nav-top{
+    height: 50px;
+  }
+
   .col{
     padding-left: 0;
     padding-right: 0;
   }
 
   .content-col-left{
-    max-width: max-content;
+    max-width: 220px;
     // position: fixed;
   }
