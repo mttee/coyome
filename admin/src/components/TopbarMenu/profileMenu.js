@@ -7,7 +7,18 @@ import {
   faSignOutAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
+import {method, LocalStorageKeys} from "../../constants/index"
+import { createHashHistory } from 'history'
+
+export const history = createHashHistory()
+
 export default class profileMenu extends Component {
+
+  Logout = () => {
+    localStorage.removeItem(LocalStorageKeys.ACCESS_TOKEN);
+    history.push("/");
+  } 
+
   render() {
     return (
       <DropdownButton
@@ -16,6 +27,7 @@ export default class profileMenu extends Component {
           <div>
             <Image
               src="https://media-a.laodong.vn/Storage/NewsPortal/2020/3/12/790444/My-Nhan-Redvelvet5.jpg"
+              onError={(e)=>{e.target.onerror = null; e.target.src="/img/default/default-avatar.jpg"}}
               roundedCircle
             />
             Admin
@@ -29,7 +41,7 @@ export default class profileMenu extends Component {
         <Dropdown.Item href="#/action-2">
           <FontAwesomeIcon icon={faCog} /> Setting
         </Dropdown.Item>
-        <Dropdown.Item href="#/action-3">
+        <Dropdown.Item onClick={ this.Logout}>
           <FontAwesomeIcon icon={faSignOutAlt} /> Logout
         </Dropdown.Item>
       </DropdownButton>

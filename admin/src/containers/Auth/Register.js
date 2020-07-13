@@ -69,7 +69,7 @@ export default class Register extends Component {
         <FormControl className="text-field" variant="outlined" size="small">
           <InputLabel htmlFor="outlined-adornment-password">Confirm Password</InputLabel>
           <OutlinedInput
-            className="input-password"
+            className="input-confirm-password"
             type={this.state.showConfirmPassword ? 'text' : 'password'}
             value={this.state.confirmPassword}
             onChange={(e) => this.handleChange(e)}

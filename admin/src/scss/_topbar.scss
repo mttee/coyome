@@ -2,7 +2,7 @@
   height: 50px;
   position: fixed;
   width: 100%;
-  z-index: 1000;
+  z-index: 2000;
   .navbar {
     padding-top: 0;
     padding-bottom: 0;
@@ -115,8 +115,20 @@
           }
         }
       }
+      .notification-icon button div svg{
+        animation: ring 1s linear infinite;
+        transform-origin: 50% 0;
+      }
     }
   }
+}
+
+@keyframes ring{
+  0%{transform: rotate(0deg)};
+  25%{transform: rotate(-10deg)};
+  50%{transform: rotate(0deg)};
+  75%{transform: rotate(10deg)};
+  50%{transform: rotate(0deg)};
 }
 
 @media (max-width: 575.98px) {

@@ -14,9 +14,10 @@ import OutlinedInput from '@material-ui/core/OutlinedInput';
 import {Facebook, Twitter} from '@material-ui/icons';
 import {method, LocalStorageKeys} from "../../constants/index"
 import apiCall from "../../utils/util"
+import { createHashHistory } from 'history'
 
+export const history = createHashHistory()
 export default class Login extends Component {
-
   constructor(props){
     super(props);
     this.state={
@@ -43,9 +44,9 @@ export default class Login extends Component {
   Login = (evt) => {
     evt.preventDefault();
     apiCall(method.POST, "api/account/login", this.state).then((res) => {
-      localStorage.setItem(LocalStorageKeys.ACCESS_TOKEN, res.data)
+      localStorage.setItem(LocalStorageKeys.ACCESS_TOKEN, res.data);
+      history.push("/");
     })
-    console.log(this.state)
   };
 
   handleClickShowPassword = () =>{
@@ -63,9 +64,10 @@ export default class Login extends Component {
         <FormControl className="text-field" variant="outlined" size="small">
           <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
           <OutlinedInput
+            name="password"
             className="input-password"
             type={this.state.showPassword ? 'text' : 'password'}
-            value={this.state.password}
+            value={this.state.password || ''}
             onChange={(e) => this.handleChange(e)}
             endAdornment={
               <InputAdornment position="end">
