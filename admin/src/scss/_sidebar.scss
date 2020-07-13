@@ -1,5 +1,6 @@
 .sidebar-auto-scroll {
   position: fixed;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
   display: block;
@@ -75,9 +76,9 @@
     }
   }
 
-  .minimenu.sidebar-auto-scroll{
-    max-width: unset;
-  }
+  // .minimenu.sidebar-auto-scroll{
+  //   max-width: unset;
+  // }
 }
 
 // Mobile

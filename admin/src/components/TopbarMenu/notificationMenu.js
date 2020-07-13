@@ -8,6 +8,7 @@ export default class notificationMenu extends Component {
     return (
       <DropdownButton
         id="dropdown-basic-button"
+        className="notification-icon"
         title={
           <div>
             <FontAwesomeIcon icon={faBell} />

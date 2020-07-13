@@ -66,7 +66,7 @@ function ScrollableTabsButtonForce() {
             scrollButtons="on"
             indicatorColor="primary"
             textColor="primary"
-            fullWidth={true}
+            fullwidth="true"
             className="tab-center"
           >
             <Tab label="Timeline" icon={<Timeline />} {...a11yProps(0)} />
@@ -112,7 +112,8 @@ export default class Profile extends Component {
                         <div className="col-sm-12">
                             <div className="profile-top-image">
                                 <div className="profile-avatar">
-                                    <img src="https://media-a.laodong.vn/Storage/NewsPortal/2020/3/12/790444/My-Nhan-Redvelvet5.jpg" className="img-fluid" alt="avatar"/>
+                                    <img src="https://media-a.laodong.vn/Storage/NewsPortal/2020/3/12/790444/My-Nhan-Redvelvet5.jpg"
+                                     onError={(e)=>{e.target.onerror = null; e.target.src="/img/default/default-avatar.jpg"}} className="img-fluid" alt="avatar"/>
                                 </div>
                                 <div className="update-profile-image-top">
                                     <input accept="image/*" id="contained-button-file"  multiple type="file"/>
