@@ -3,7 +3,7 @@ export default{
         {
             icon: 'tachometer-alt',
             label: 'Dashboard',
-            to: '#a-link',
+            to: '/',
         },
         {
             icon: 'envelope',
@@ -43,14 +43,14 @@ export default{
                 {
                     icon: 'icon-class-name',
                     label: 'sub Form',
-                    to: '#another-link',
+                    to: '#profile',
                 },
             ],
         },
         {
             icon: 'calendar-alt',
             label: 'Profile',
-            to: '#a-link',
+            to: 'profile',
         },
         {
             icon: 'calendar-alt',

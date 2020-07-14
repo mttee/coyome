@@ -11,7 +11,7 @@ class Sidebar extends Component {
         return (
             <React.Fragment>
                 <div className={`${this.props.isToggle? 'minimenu' :''} sidebar-auto-scroll`}>
-                    <MetisMenu content={menuCofig.menu} className="side-bar"/>
+                    <MetisMenu content={menuCofig.menu} className="side-bar" activeLinkFromLocation/>
                 </div>
             </React.Fragment>
         )
