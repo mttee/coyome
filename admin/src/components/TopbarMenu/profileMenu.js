@@ -7,7 +7,7 @@ import {
   faSignOutAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
-import {method, LocalStorageKeys} from "../../constants/index"
+import {LocalStorageKeys} from "../../constants/index"
 import { createHashHistory } from 'history'
 
 export const history = createHashHistory()

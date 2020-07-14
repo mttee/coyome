@@ -7,10 +7,11 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import { method, LocalStorageKeys } from "./constants/index";
+import {LocalStorageKeys } from "./constants/index";
 import Layout from "./components/layouts/";
 
 import Auth from "./containers/Auth/index";
+
 
 var getTokenLocalStorage = () => {
   return localStorage.getItem(LocalStorageKeys.ACCESS_TOKEN) ? true : false;
@@ -64,7 +65,7 @@ function App() {
           <PublicRoute path="/login">
             <Auth />
           </PublicRoute>
-          <PrivateRoute path="/">
+          <PrivateRoute>
             <Layout />
           </PrivateRoute>
         </Switch>

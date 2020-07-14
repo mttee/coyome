@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap/";
 import {connect} from 'react-redux'
+import {Switch, Route } from "react-router-dom";
 import Topbar from "./Topbar";
 import Sidebar from "./Sidebar";
-
-import Profile from "../../containers/UserManager/Profile"
+import routes from "../../routes";
 
 class index extends Component {
   render() {
@@ -21,7 +21,16 @@ class index extends Component {
               <Sidebar />
             </Col>
             <Col>
-              <Profile/>
+              <Switch>
+                {routes.map((route, index) => (
+                  <Route
+                    key={index}
+                    path={route.path}
+                    exact={route.exact}
+                    children={<route.component/>}
+                  />
+                ))}
+              </Switch>
             </Col>
           </Row>
         </Container>
