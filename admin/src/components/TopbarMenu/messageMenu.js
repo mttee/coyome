@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { DropdownButton, Dropdown, Badge } from "react-bootstrap/";
+import { DropdownButton, Dropdown } from "react-bootstrap/";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
@@ -8,13 +8,9 @@ export default class messageMenu extends Component {
     return (
       <DropdownButton
         id="dropdown-basic-button"
+        className="envelopeIcon"
         title={
-          <div>
-            <FontAwesomeIcon icon={faEnvelope} />
-            <Badge pill variant="primary">
-              20
-            </Badge>{" "}
-          </div>
+          <FontAwesomeIcon icon={faEnvelope} />
         }
       >
         <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
