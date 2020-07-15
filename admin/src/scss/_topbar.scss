@@ -159,6 +159,7 @@
       .notification-icon{
         .dropdown-menu{
           width: 300px;
+          height: 400px;
           padding: 0;
 
           .notification-title{
@@ -174,6 +175,51 @@
               background: #36394c;
               border-radius: 10%;
               font-size: $base-font-size;
+            }
+          }
+
+          .notification-item{
+            padding: 0;
+            word-spacing: 0.05em;
+            span{
+              font-size: $base-font-size;
+            }
+
+            p{
+              color: white;
+              font-size: 11px;
+              max-width: 100%;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+
+            li{  
+                .MuiAvatar-colorDefault{
+                  background-color: green !important;
+                }
+            }
+          }
+
+          .notification-bottom{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            color: #36394c;
+            font-size: $base-font-size;
+            padding: 2%;
+            background: rgba(54,153,255,.75);
+            text-align: center;
+            width: 100%;
+            word-spacing: 1px;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+
+            &:hover{
+              color: white;
+              text-decoration: none;
+              background: rgba(54,153,255,.75);
             }
           }
         }
