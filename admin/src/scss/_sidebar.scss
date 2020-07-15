@@ -7,7 +7,7 @@
 
 .sidebar-auto-scroll {
   position: fixed;
-  height: 100%;
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   display: block;
@@ -57,7 +57,7 @@
 
 @mixin minimenu($mobile) {
   @if $mobile == false{
-    max-width: 50px;
+    max-width: 45px;
     &:hover{
       max-width: 220px;
     }
@@ -74,7 +74,7 @@
 
 
 // Tablet
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .content-col-left{
     @include minimenu(false);
 
@@ -89,11 +89,13 @@
 }
 
 // Mobile
-@media (max-width: 576px){
+@media (max-width: 768px){
   .content-col-left{
     @include minimenu(true);
     max-width: max-content;
     z-index: 2000;
+    transform: translateX(0px) !important;
+    position: fixed;
 
     .sidebar-auto-scroll {
       @include minimenu(true);
