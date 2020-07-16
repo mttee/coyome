@@ -8,6 +8,7 @@ body {
     font-family: $font-roboto-condensed;
     // color: $body-color;
     font-size: $base-font-size;
+    background: #eef0f8;
   }
 
   .nav-top{
@@ -22,4 +23,8 @@ body {
   .content-col-left{
     max-width: 220px;
     // position: fixed;
+  }
+
+  .col-right-content{
+    margin: 1% auto;
   }

@@ -57,7 +57,7 @@
 
 @mixin minimenu($mobile) {
   @if $mobile == false{
-    max-width: 45px;
+    max-width: 48px;
     &:hover{
       max-width: 220px;
     }
