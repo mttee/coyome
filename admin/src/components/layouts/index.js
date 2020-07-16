@@ -21,16 +21,18 @@ class index extends Component {
               <Sidebar />
             </Col>
             <Col>
-              <Switch>
-                {routes.map((route, index) => (
-                  <Route
-                    key={index}
-                    path={route.path}
-                    exact={route.exact}
-                    children={<route.component/>}
-                  />
-                ))}
-              </Switch>
+              <div className="col-right-content">
+                <Switch>
+                    {routes.map((route, index) => (
+                      <Route
+                        key={index}
+                        path={route.path}
+                        exact={route.exact}
+                        children={<route.component/>}
+                      />
+                    ))}
+                </Switch>
+              </div>
             </Col>
           </Row>
         </Container>

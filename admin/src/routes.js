@@ -1,5 +1,5 @@
 import Dashboard from "./containers/Dashboard/Dashboard"
-import Profile from "./containers/UserManager/Profile"
+import Profile from "./containers/ProfileManager/Profile"
 
 const routes = [
     {path: "/", exact: true, name: "Dashboard", component: Dashboard},
