@@ -29,49 +29,51 @@ export default class notificationMenu extends Component {
           Notifications
           <span>10</span>
         </div>
-        <Dropdown.Item href="#/action-1" className="notification-item">
-          <ListItem>
-          <ListItemAvatar>
-          <Avatar variant="rounded">
-            <LinkIcon />
-          </Avatar>
-          </ListItemAvatar>
-          <ListItemText primary="Launch Admin" secondary="Just see my new admin!" />
-        </ListItem>
-        </Dropdown.Item>
+        <div className="notification-list-item">
+          <Dropdown.Item href="#/action-1" className="notification-item">
+            <ListItem>
+            <ListItemAvatar>
+            <Avatar variant="rounded">
+              <LinkIcon />
+            </Avatar>
+            </ListItemAvatar>
+            <ListItemText primary="Launch Admin" secondary="Just see my new admin!" />
+          </ListItem>
+          </Dropdown.Item>
 
-        <Dropdown.Item href="#/action-1" className="notification-item">
-          <ListItem>
-          <ListItemAvatar>
-          <Avatar variant="rounded">
-            <DateRangeIcon />
-          </Avatar>
-          </ListItemAvatar>
-          <ListItemText primary="Event Today" secondary="Just a reminder that you have event." />
-        </ListItem>
-        </Dropdown.Item>
+          <Dropdown.Item href="#/action-1" className="notification-item">
+            <ListItem>
+            <ListItemAvatar>
+            <Avatar variant="rounded">
+              <DateRangeIcon />
+            </Avatar>
+            </ListItemAvatar>
+            <ListItemText primary="Event Today" secondary="Just a reminder that you have event." />
+          </ListItem>
+          </Dropdown.Item>
 
-        <Dropdown.Item href="#/action-1" className="notification-item">
-          <ListItem>
-          <ListItemAvatar>
-          <Avatar variant="rounded">
-            <SettingsIcon />
-          </Avatar>
-          </ListItemAvatar>
-          <ListItemText primary="Settings" secondary="You can customize this template as you want." />
-        </ListItem>
-        </Dropdown.Item>
+          <Dropdown.Item href="#/action-1" className="notification-item">
+            <ListItem>
+            <ListItemAvatar>
+            <Avatar variant="rounded">
+              <SettingsIcon />
+            </Avatar>
+            </ListItemAvatar>
+            <ListItemText primary="Settings" secondary="You can customize this template as you want." />
+          </ListItem>
+          </Dropdown.Item>
 
-        <Dropdown.Item href="#/action-1" className="notification-item">
-          <ListItem>
-          <ListItemAvatar>
-          <Avatar variant="rounded">
-            <MailIcon />
-          </Avatar>
-          </ListItemAvatar>
-          <ListItemText primary="Check Email" secondary="Just check my admin!" />
-        </ListItem>
-        </Dropdown.Item>
+          <Dropdown.Item href="#/action-1" className="notification-item">
+            <ListItem>
+            <ListItemAvatar>
+            <Avatar variant="rounded">
+              <MailIcon />
+            </Avatar>
+            </ListItemAvatar>
+            <ListItemText primary="Check Email" secondary="Just check my admin!" />
+          </ListItem>
+          </Dropdown.Item>
+        </div>
 
         <a href="#/notification" className="notification-bottom align-self-end">View All</a>
       </DropdownButton>

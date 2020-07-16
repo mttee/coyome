@@ -159,7 +159,7 @@
       .notification-icon{
         .dropdown-menu{
           width: 300px;
-          height: 400px;
+          // height: 400px;
           padding: 0;
 
           .notification-title{
@@ -178,33 +178,74 @@
             }
           }
 
-          .notification-item{
-            padding: 0;
-            word-spacing: 0.05em;
-            span{
-              font-size: $base-font-size;
+          .notification-list-item{
+            overflow-y: auto;
+            max-height: 50vh;
+            min-height: 50vh;
+
+            .notification-item:first-child li{
+              .MuiAvatar-colorDefault{
+                background-color: green !important;
+              }
             }
 
-            p{
-              color: white;
-              font-size: 11px;
-              max-width: 100%;
-              white-space: nowrap;
-              text-overflow: ellipsis;
-              overflow: hidden;
+            .notification-item:nth-child(2) li{
+              .MuiAvatar-colorDefault{
+                background-color: #dc3545 !important;
+              }
             }
 
-            li{  
-                .MuiAvatar-colorDefault{
-                  background-color: green !important;
-                }
+            .notification-item:nth-child(3) li{
+              .MuiAvatar-colorDefault{
+                background-color: #17a2b8 !important;
+              }
+            }
+
+            .notification-item:nth-child(4) li{
+              .MuiAvatar-colorDefault{
+                background-color: #745af2 !important;
+              }
+            }
+
+            .notification-item{
+              padding: 0;
+              word-spacing: 0.05em;
+              span{
+                font-size: $base-font-size;
+              }
+  
+              p{
+                color: white;
+                font-size: 11px;
+                max-width: 100%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+              }
+  
+              // li{  
+              //   .MuiAvatar-colorDefault{
+              //     background-color: green !important;
+              //   }
+              // }
+            }
+
+            &::-webkit-scrollbar {
+              background-color: transparent;
+              position: absolute;
+              top: 0;
+              right: 50%;
+              width: 5px;
+            }
+            &:hover::-webkit-scrollbar-thumb {
+              background-color: #999;
+              position: absolute;
+              right: 50%;
             }
           }
 
+
           .notification-bottom{
-            position: absolute;
-            left: 0;
-            bottom: 0;
             color: #36394c;
             font-size: $base-font-size;
             padding: 2%;
