@@ -1,0 +1,90 @@
+.dashboard{
+    .card{
+        background-color: $color-primary;
+        height: 100%;
+
+        .card-title{
+            text-align: left;
+            color: $font-color-dark;
+            font-family: $font-poppins;
+            font-weight: bold;
+        }
+
+        .monthly-earning{
+            color: white;
+            
+            p{
+                font-size: $base-font-size;
+                width: 100%;
+                margin: 0;
+            }
+
+            h3{
+                color: white;
+            }
+
+            button{
+                text-transform: none;
+            }
+        }
+
+        .social-source{
+            .facebook{
+                background-color: #556ee6;
+            }
+
+            .twitter{
+                background-color: #50a5f1;
+            }
+
+            .instagram{
+                background-color: #e83e8c;
+            }
+
+            svg{
+                margin-left: 0 !important;
+            }
+
+            p{
+                color: white;
+                font-family: $font-poppins;
+                font-weight: bold;
+                font-size: $small-font-size;
+                margin-bottom: 0;
+            }
+
+            span.number{
+                color: white;
+                font-family: $font-poppins;
+                font-style: italic;
+                font-size: $small-font-size;
+            }
+        }
+    }
+
+    .dashboard-small-card{
+        .small-card-title{
+            font-size: $large-font-size;
+            color: white;
+            text-align: left;
+            font-family: $font-poppins;
+            font-weight: bold;
+        }
+
+        .small-card-number{
+            font-size: $large-font-size;
+            color: white;
+            text-align: left;
+            margin: 0;
+            font-family: $font-poppins;
+            font-weight: bold;
+        }
+
+        .MuiAvatar-root{
+            display: flex;
+            float: right;
+            align-self: center;
+            background:#556ee6
+        }
+    }
+}
