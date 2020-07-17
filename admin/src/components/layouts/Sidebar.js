@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
-import MetisMenu from 'react-metismenu';
+import MetisMenu from 'react-metismenu-router';
 import menuCofig from '../../config/menu.config'
 
 
