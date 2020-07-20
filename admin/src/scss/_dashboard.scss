@@ -1,90 +1,141 @@
-.dashboard{
-    .card{
-        background-color: $color-primary;
-        height: 100%;
+.dashboard {
+  .card {
+    background-color: $color-primary;
+    height: 100%;
 
-        .card-title{
-            text-align: left;
-            color: $font-color-dark;
-            font-family: $font-poppins;
-            font-weight: bold;
-        }
-
-        .monthly-earning{
-            color: white;
-            
-            p{
-                font-size: $base-font-size;
-                width: 100%;
-                margin: 0;
-            }
-
-            h3{
-                color: white;
-            }
-
-            button{
-                text-transform: none;
-            }
-        }
-
-        .social-source{
-            .facebook{
-                background-color: #556ee6;
-            }
-
-            .twitter{
-                background-color: #50a5f1;
-            }
-
-            .instagram{
-                background-color: #e83e8c;
-            }
-
-            svg{
-                margin-left: 0 !important;
-            }
-
-            p{
-                color: white;
-                font-family: $font-poppins;
-                font-weight: bold;
-                font-size: $small-font-size;
-                margin-bottom: 0;
-            }
-
-            span.number{
-                color: white;
-                font-family: $font-poppins;
-                font-style: italic;
-                font-size: $small-font-size;
-            }
-        }
+    .card-title {
+      text-align: left;
+      color: $font-color-dark;
+      font-family: $font-poppins;
+      font-weight: bold;
     }
 
-    .dashboard-small-card{
-        .small-card-title{
-            font-size: $large-font-size;
-            color: white;
-            text-align: left;
-            font-family: $font-poppins;
-            font-weight: bold;
-        }
+    .social-source {
+      .facebook {
+        background-color: #556ee6;
+      }
 
-        .small-card-number{
-            font-size: $large-font-size;
-            color: white;
-            text-align: left;
-            margin: 0;
-            font-family: $font-poppins;
-            font-weight: bold;
-        }
+      .twitter {
+        background-color: #50a5f1;
+      }
 
-        .MuiAvatar-root{
-            display: flex;
-            float: right;
-            align-self: center;
-            background:#556ee6
-        }
+      .instagram {
+        background-color: #e83e8c;
+      }
+
+      svg {
+        margin-left: 0 !important;
+      }
+
+      p {
+        color: white;
+        font-family: $font-poppins;
+        font-weight: bold;
+        font-size: $small-font-size;
+        margin-bottom: 0;
+      }
+
+      span.number {
+        color: white;
+        font-family: $font-poppins;
+        font-style: italic;
+        font-size: $small-font-size;
+      }
     }
+
+    .top-users {
+      font-family: $font-poppins;
+      overflow-y: auto;
+      height: 300px;
+
+      thead {
+        max-width: 100%;
+        min-width: 100%;
+        th {
+          position: sticky;
+          top: 0;
+          border: none;
+          background: $color-primary;
+          color: white;
+          z-index: 2;
+        }
+      }
+
+      tbody {
+        td {
+          color: white;
+          font-size: $small-font-size;
+
+          .actions {
+            justify-content: center;
+            button {
+              border: transparent;
+              outline: transparent;
+              &:hover {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+      .table th,
+      .table td {
+        vertical-align: middle !important;
+        text-align: left;
+      }
+      &::-webkit-scrollbar {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        right: 50%;
+        width: 5px;
+      }
+      ::-webkit-scrollbar-track {
+        border-radius: 0;
+        background: transparent;
+      }
+      &:hover::-webkit-scrollbar-thumb:vertical {
+        background-color: #999;
+        position: absolute;
+        right: 50%;
+        top: 10%;
+      }
+      &::-webkit-scrollbar-thumb:horizontal {
+        background-color: #999;
+        position: absolute;
+        right: 50%;
+        top: 10%;
+        height: 20px;
+      }
+      &::-webkit-scrollbar-corner {
+        background: transparent;
+      }
+    }
+  }
+
+  .dashboard-small-card {
+    height: auto;
+    .small-card-title {
+      font-size: $large-font-size;
+      color: white;
+      text-align: left;
+      font-family: $font-poppins;
+      font-weight: bold;
+    }
+
+    .small-card-number {
+      font-size: $large-font-size;
+      color: white;
+      text-align: left;
+      margin: 0;
+      font-family: $font-poppins;
+    }
+
+    .MuiAvatar-root {
+      display: flex;
+      float: right;
+      align-self: center;
+      background: #556ee6;
+    }
+  }
 }
