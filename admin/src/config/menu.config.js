@@ -13,7 +13,7 @@ export default {
     {
       icon: "calendar-alt",
       label: "Calendar",
-      to: "#a-link",
+      to: "calendar",
     },
     {
       icon: "table",
