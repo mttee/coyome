@@ -47,10 +47,11 @@ export default {
         },
       ],
     },
+    
     {
-      icon: "calendar-alt",
-      label: "Profile",
-      to: "profile",
+      icon: "calendar-check",
+      label: "Tasks",
+      to: "tasks",
     },
   ],
 };

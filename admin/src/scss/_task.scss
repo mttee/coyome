@@ -1,0 +1,71 @@
+//Task-board
+.container-task-board {
+  display: flex;
+  justify-content: center;
+
+  // Task-Column
+  .task-column {
+    margin: 8px;
+    border: 1px solid #32394e;
+    border-radius: 4px;
+    // width: 220px;
+    width: 300px;
+    background-color: #36394c;
+  
+    display: flex;
+    flex-direction: column;
+  
+    .task-title {
+      padding: 8px;
+      color: white;
+      font-size: $base-font-size;
+      font-family: $font-poppins;
+    }
+  
+    .task-list {
+      padding: 8px;
+      transition: background-color 0.2s ease;
+      flex-grow: 1;
+      min-height: 100px;
+  
+      // Task-Item
+      .container-item {
+        border: 1px solid #32394e;
+        border-radius: 4px;
+        padding: 8px;
+        margin-bottom: 8px;
+        transition: background-color 0.2s ease;
+        font-family: $font-poppins;
+        font-size: $small-font-size;
+        text-align: left;
+
+        .item-title{
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .item-icon{
+            .item-icon-hight{
+                color: red;
+                min-width: 10px;
+            }
+
+            .item-icon-medium{
+                color: orange;
+                min-width: 10px;
+            }
+
+            .item-icon-low{
+                color: green;
+                min-width: 10px;
+            }
+
+            .item-icon-new, .item-icon-bug, .item-icon-improvement{
+                min-width: 10px;
+            }
+        }
+      }
+    }
+  }
+}
+

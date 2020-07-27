@@ -10,6 +10,7 @@ TABLES OF CSS
 6. auth
 7. profile
 8. calendar
+9. task
 */
 
 
@@ -39,3 +40,6 @@ TABLES OF CSS
 
 /*8.calendar*/
 @import "calendar";
+
+/*9.Task*/
+@import "task";
