@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import moment from "moment";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 const CustomToolbar = (toolbar) => {
   const [lableValue, setLable] = useState("month");
@@ -91,13 +93,13 @@ const CustomToolbar = (toolbar) => {
     <div className="toolbar-container d-flex justify-content-between mb-3">
       <span className="rbc-btn-group">
         <button className="btn" type="button" onClick={goToBack}>
-          <span className="prev-icon">&#8249;</span>
+          <span className="prev-icon"><FontAwesomeIcon icon={faCaretLeft} /></span>
         </button>
         <button className="btn" type="button" onClick={goToCurrent}>
           <span className="next-icon">Today</span>
         </button>
         <button className="btn" type="button" onClick={goToNext}>
-          <span className="next-icon">&#8250;</span>
+          <span className="next-icon"><FontAwesomeIcon icon={faCaretRight} /></span>
         </button>
       </span>
 
@@ -110,7 +112,7 @@ const CustomToolbar = (toolbar) => {
       </label>
 
       <span className="rbc-btn-group">
-        <button className="btn  rbc-active" onClick={monthView}>
+        <button className="btn" onClick={monthView}>
           <span className="label-filter-off">Month</span>
         </button>
         <button className="btn" onClick={weekView}>

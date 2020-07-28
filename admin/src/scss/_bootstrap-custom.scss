@@ -1,0 +1,43 @@
+.btn-primary{
+    background-color: #556ee6;
+    border-color: #556ee6;
+}
+
+.modal-content{
+    background-color: $color-primary;
+    font-family: $font-poppins;
+
+    .modal-header{
+        border-bottom: 1px solid $border-color-dark-modal;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        .modal-title{
+            font-size: $large-font-size;
+            color: $font-color-dark;
+        }
+    }
+
+
+    .modal-body{
+        color: $font-color-dark-modal;
+    }
+
+    .modal-body{
+        .form-control{
+            background-color: $color-primary;
+            border: 1px solid $border-color-dark-modal;
+            color: $font-color-dark-modal;
+        }
+    }
+
+    .modal-footer{
+        border: none;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        button{
+            font-size: $small-font-size;
+        }
+    }
+}

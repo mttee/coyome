@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import events from "./events";
 import { Calendar, Views, momentLocalizer } from "react-big-calendar";
 import TollbarCustom from "./ToolbarCustom";
+import EventCustom from "./EventCustom"
 import withDragAndDrop from "react-big-calendar/lib/addons/dragAndDrop";
 import NewEvent from './NewEvent';
 import moment from "moment";
@@ -85,18 +86,21 @@ export default class Schedule extends Component {
   };
 
   newEvent(event) {
-    let idList = this.state.events.map(a => a.id)
-    let newId = Math.max(...idList) + 1
-    let hour = {
-      id: newId,
-      title: 'New Event',
-      allDay: event.slots.length === 1,
-      start: event.start,
-      end: event.end,
-    }
-    this.setState({
-      events: this.state.events.concat([hour]),
-    })
+    // let idList = this.state.events.map(a => a.id)
+    // let newId = Math.max(...idList) + 1
+    // let hour = {
+    //   id: newId,
+    //   title: 'New Event',
+    //   allDay: event.slots.length === 1,
+    //   start: event.start,
+    //   end: event.end,
+    // }
+    // this.setState({
+    //   events: this.state.events.concat([hour]),
+    // })
+
+    this.refs.child.handleShow();
+    
   }
 
   onSelectEvent(pEvent) {
@@ -134,9 +138,10 @@ export default class Schedule extends Component {
           onSelectEvent={(event) => this.onSelectEvent(event)}
           components={{
             toolbar: TollbarCustom,
+            event: EventCustom
           }}
         />
-        <NewEvent/>
+        <NewEvent ref="child"/>
       </div>
     );
   }

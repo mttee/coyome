@@ -2,7 +2,8 @@
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
-  z-index: 2000;
+  // z-index: 2000;
+   z-index: 1030;
 }
 
 .sidebar-auto-scroll {
@@ -27,8 +28,11 @@
         .metismenu-link {
           text-decoration: none;
           font-size: 1rem;
+          color: #a2a3b7;
           &.active {
             background: rgba(255, 255, 255, 0.05);
+            // background: #556ee6;
+            color: white;
           }
 
           &.has-active-child {
