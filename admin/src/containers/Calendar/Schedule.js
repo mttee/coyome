@@ -56,7 +56,7 @@ export default class Schedule extends Component {
     }
 
     const nextEvents = events.map((existingEvent) => {
-      return existingEvent.id == event.id
+      return existingEvent.id === event.id
         ? { ...existingEvent, start, end }
         : existingEvent;
     });
@@ -72,7 +72,7 @@ export default class Schedule extends Component {
     const { events } = this.state;
 
     const nextEvents = events.map((existingEvent) => {
-      return existingEvent.id == event.id
+      return existingEvent.id === event.id
         ? { ...existingEvent, start, end }
         : existingEvent;
     });
@@ -90,7 +90,7 @@ export default class Schedule extends Component {
     let hour = {
       id: newId,
       title: 'New Event',
-      allDay: event.slots.length == 1,
+      allDay: event.slots.length === 1,
       start: event.start,
       end: event.end,
     }
