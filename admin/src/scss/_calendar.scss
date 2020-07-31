@@ -66,21 +66,30 @@
     border: none !important;
   }
 
+  .rbc-event{
+    border-radius: 0;
+    background: #556ee6;
+    font-family: $font-poppins;
+    font-size: $small-font-size;
+  }
+
   //.rbc-toolbar {
   .toolbar-container {
     .rbc-btn-group {
+      font-family: $font-poppins;
       button {
         color: white;
         background-color: #556ee6;
         border-color: #556ee6;
+        font-size: $base-font-size;
         &:hover {
           background-color: #3452e1;
           border-color: #2948df;
         }
-        &.rbc-active{
-          background-color: #3452e1;
-          border-color: #2948df;
-        }
+        // &.rbc-active{
+        //   background-color: #3452e1;
+        //   border-color: #2948df;
+        // }
       }
     }
     label {
