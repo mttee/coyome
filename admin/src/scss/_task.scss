@@ -69,3 +69,12 @@
   }
 }
 
+@media (max-width: 575.98px){
+  .task{
+    position: relative;
+    overflow-x: auto;
+  }
+  .container-task-board{
+    width: max-content;
+  }
+}

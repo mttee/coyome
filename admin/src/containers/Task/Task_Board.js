@@ -72,7 +72,7 @@ export default class Task_Board extends Component {
   };
   render() {
     return (
-      <div className="">
+      <div className="task">
         <DragDropContext onDragEnd={this.onDragEnd}>
           <div className="container-task-board">
             {this.state.columnOrder.map((columnId) => {
@@ -89,3 +89,4 @@ export default class Task_Board extends Component {
     );
   }
 }
+
