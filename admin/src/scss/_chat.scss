@@ -1,0 +1,80 @@
+.chat-sidebar{
+    width: 100%;
+    height: 100%;
+    background-color: $color-primary;
+    border-radius: 4px;
+    padding: 2%;
+
+    .chat-sidebar-profile-action{
+        color: $font-color-dark;
+        display: flex;
+        border-bottom: 1px solid white ;
+
+        .profile{
+            width: 50%;
+            display: flex;
+            align-items: center;
+
+            .user-name{
+                font-size: $base-font-size
+            }
+
+            .user-name, .status{
+                font-family: $font-poppins;
+            }
+
+            .status{
+                font-style: italic;
+                font-size: $small-font-size;
+            }
+        }
+
+        .action{
+            width: 50%;
+            float: right;
+            text-align: right;
+
+            button{
+                color: $font-color-dark;
+            }
+
+        }      
+    }
+
+    .chat-search {
+        .input-group-prepend span{
+            background-color: #2e3548;
+            color: white;
+            border: transparent;
+        }
+
+        input{
+            background-color: #2e3548;
+            border-left: none;
+            color: white;
+
+            &:focus{
+                box-shadow: none;
+                border-color: transparent;
+            }
+        }
+
+    }
+}
+
+.action-popup{
+    .MuiPaper-root{
+        background-color: $color-primary;
+        border-color: $color-primary;
+        color: $font-color-dark;
+
+        .MuiListItemIcon-root{
+            color: $font-color-dark;
+            min-width: 30px;
+        }
+
+        li:active{
+            background-color: #556ee6;
+        }
+    }
+}

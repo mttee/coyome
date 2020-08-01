@@ -30,10 +30,10 @@ export default class Task extends React.Component {
             }}
           >
             <Row noGutters>
-              <Col xs xl="3">
+              <Col xs md="3">
                 <Avatar alt="Remy Sharp" src={this.props.task.avatar}/>
               </Col>
-              <Col xs xl="9">
+              <Col xs md="9">
                 <p className="item-title">{this.props.task.content}</p>
                 <p className="item-icon mb-0">
                     <span className="text-left">{this.props.task.code}</span>

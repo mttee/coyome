@@ -47,11 +47,15 @@ export default {
         },
       ],
     },
-    
     {
       icon: "calendar-check",
       label: "Tasks",
       to: "tasks",
+    },
+    {
+      icon: "comment-alt",
+      label: "Chat",
+      to: "chat",
     },
   ],
 };
