@@ -4,14 +4,16 @@ using Coyome.Data.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Coyome.Data.Migrations
 {
     [DbContext(typeof(CoyomeDBContext))]
-    partial class CoyomeDBContextModelSnapshot : ModelSnapshot
+    [Migration("20200728231838_Add_IsDefault_Table_Role")]
+    partial class Add_IsDefault_Table_Role
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -177,7 +179,7 @@ namespace Coyome.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("RoleClaims");
+                    b.ToTable("AppRoleClaims");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -198,7 +200,7 @@ namespace Coyome.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UserClaims");
+                    b.ToTable("AppUserClaims");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
@@ -217,7 +219,7 @@ namespace Coyome.Data.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("UserLogins");
+                    b.ToTable("AppUserLogins");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
@@ -230,7 +232,7 @@ namespace Coyome.Data.Migrations
 
                     b.HasKey("UserId", "RoleId");
 
-                    b.ToTable("UserRoles");
+                    b.ToTable("AppUserRoles");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -249,7 +251,7 @@ namespace Coyome.Data.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("UserTokens");
+                    b.ToTable("AppUserTokens");
                 });
 #pragma warning restore 612, 618
         }

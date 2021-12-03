@@ -15,6 +15,7 @@ namespace Coyome.Data.Entities
 
         public string Description { get; set; }
         public bool InActive { get; set; }
+        public bool IsDefault { get; set; }
         public DateTime CreatedTime { get; set; }
         public DateTime UpdatedTime { get; set; }
         public string CreatedBy { get; set; }

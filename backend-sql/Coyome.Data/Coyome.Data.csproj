@@ -28,4 +28,8 @@
     <ProjectReference Include="..\Coyome.Core\Coyome.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\RoleModel\Response\" />
+  </ItemGroup>
+
 </Project>

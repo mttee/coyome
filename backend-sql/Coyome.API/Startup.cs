@@ -9,6 +9,7 @@ using Coyome.Data.Entities;
 using Coyome.Data.Models.ConfigSettingModel;
 using Coyome.Data.Services.Account;
 using Coyome.Data.Services.Mail;
+using Coyome.Data.Services.Roles;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -54,6 +55,7 @@ namespace Coyome.API
             services.AddTransient<SignInManager<User>, SignInManager<User>>();
             services.AddTransient<RoleManager<Role>, RoleManager<Role>>();
             services.AddTransient<IAccountService, AccountService>();
+            services.AddTransient<IRoleService, RoleService>();
             services.AddTransient<IMailService, MailService>();
 
             // Register the Swagger generator, defining 1 or more Swagger documents
